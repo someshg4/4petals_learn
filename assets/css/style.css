@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+i::before {
+  line-height: normal !important;
+}
+
+.nav_logo img {
+  height: 100%;
+  width: 50px;
+}
+
+/* Nav bar  */
+#nav_sec {
+  border-bottom: 1px solid #e7e7e7;
+  position: sticky;
+  top: -82px;
+  z-index: 1111;
+  border-bottom: 1px solid #e7e7e7;
+  backdrop-filter: blur(50px) !important;
+}
+#mobile_nav {
+  background-color: #fff !important;
+}
+.search_bar {
+  background-color: rgb(255, 255, 255);
+  border: 0.5px solid rgb(202, 202, 202);
+  border-radius: 3px;
+}
+.search_bar i {
+  background-color: rgb(231, 231, 231);
+  color: rgb(0, 0, 0);
+  padding: 8px 10px;
+  border-radius: 2px;
+  height: 100%;
+  font-weight: 900;
+}
+.search_bar input {
+  padding: 3px;
+  margin: 5px;
+  font-size: small;
+}
+.search_bar input:focus {
+  outline: none;
+}
+.search_bar input:focus .search_bar {
+  border: 0.5px solid rgb(20, 133, 29);
+}
+.dropdown_list {
+  opacity: 0;
+  visibility: hidden;
+  background-color: white;
+  transform: translateY(10px);
+  transition: 0.5s;
+  overflow: hidden;
+  width: calc(100vh - 20vh);
+  height: calc(100vh - 60vh);
+  margin: auto;
+  left: -50%;
+  padding: 20px;
+}
+@media (max-width: 900px) {
+  .dropdown_list {
+    width: calc(80vh - 20vh) !important;
+  }
+}
+.dropdown:hover .dropdown_list {
+  visibility: visible;
+  opacity: 100%;
+  transition: 0.5s;
+  transform: translateY(0px);
+}
+
+/* explore course */
+.course_box {
+  overflow-y: hidden;
+}
+.course_detail {
+  backdrop-filter: blur(50px);
+  top: 0;
+  visibility: 0;
+  opacity: 0;
+  overflow-y: scroll;
+  transition-duration: 0.6s;
+  transform: translateY(100px);
+}
+.course_detail::-webkit-scrollbar {
+  display: none;
+}
+.course_box:hover .course_detail {
+  top: 0;
+  height: 80%;
+  display: block !important;
+  transition-duration: 0.2s;
+  visibility: visible;
+  opacity: 100%;
+  transform: translateY(0px);
+}
+.shown {
+  transition: 0.5s;
+}
+
+/*  register css */
+
+
+
+
+
+.signup_container{
+  text-align:-webkit-center;
+  padding: 25px;
+  border: 1px solid rgb(243, 239, 239);
+  width: 50%;
+  margin: auto;
+
+}
+
+.form_header h2{
+  color:rgb(248, 91, 91);
+  margin: 5px;
+  padding: 25px;
+}
+
+.form_section{
+  margin: 10px;
+}
+
+.in__box{
+  padding: 8px;
+}
+
+.in__box input{
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid rgb(192, 191, 191);
+  margin-left: 30px;
+  border-color: rgb(196, 195, 193);
+}
+
+.signup_section{
+  background-color: white;
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+}
+.signin_btn a{
+  border: 1px solid rgb(255, 50, 50);
+  background-color: rgb(255, 71, 15);
+  padding: 10px 30px 10px 30px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.forget_content{
+  padding: 5px;
+}
+
+.last_content{
+  padding: 5px;
+}
+
+@media only screen and (max-width:480px){
+  .signup_section{
+      margin: auto;
+      width: 100%;
+  }
+}
